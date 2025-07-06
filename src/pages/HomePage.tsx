@@ -51,21 +51,6 @@ const HomePage = () => {
                 <p className="text-gray-600 text-sm">Identity & Access Management</p>
               </div>
             </div>
-            <div className="flex items-center space-x-4">
-              <Button
-                onClick={() => navigate('/login')}
-                variant="outline"
-                className="border-gray-300 hover:bg-gray-50"
-              >
-                User Login
-              </Button>
-              <Button
-                onClick={() => navigate('/admin')}
-                className="bg-gray-900 hover:bg-gray-800 text-white"
-              >
-                Admin Console
-              </Button>
-            </div>
           </div>
         </div>
       </header>
@@ -152,7 +137,7 @@ const HomePage = () => {
               <span className="text-xl font-semibold">Enterprise IAM Console</span>
             </div>
             <div className="text-gray-400">
-              © 2024 Enterprise IAM Console. Professional Identity & Access Management Platform.
+              © 2025 Enterprise IAM Console. Professional Identity & Access Management Platform.
             </div>
           </div>
         </div>
