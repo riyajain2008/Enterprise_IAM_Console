@@ -36,6 +36,39 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      {/* Header */}
+      <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-6">
+            <div className="flex items-center">
+              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                <Shield className="w-7 h-7 text-white" />
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold text-gray-900">
+                  Enterprise IAM Console
+                </h1>
+                <p className="text-gray-600 text-sm">Identity & Access Management</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Button
+                onClick={() => navigate('/login')}
+                variant="outline"
+                className="border-gray-300 hover:bg-gray-50"
+              >
+                User Login
+              </Button>
+              <Button
+                onClick={() => navigate('/admin')}
+                className="bg-gray-900 hover:bg-gray-800 text-white"
+              >
+                Admin Console
+              </Button>
+            </div>
+          </div>
+        </div>
+      </header>
 
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -119,7 +152,7 @@ const HomePage = () => {
               <span className="text-xl font-semibold">Enterprise IAM Console</span>
             </div>
             <div className="text-gray-400">
-              © 2025 Enterprise IAM Console. Professional Identity & Access Management Platform.
+              © 2024 Enterprise IAM Console. Professional Identity & Access Management Platform.
             </div>
           </div>
         </div>

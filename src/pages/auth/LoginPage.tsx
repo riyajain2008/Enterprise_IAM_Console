@@ -40,12 +40,8 @@ const LoginPage = () => {
           description: "You have been successfully logged in.",
         });
         
-        // Check if user is admin
-        if (data.user.role === "admin") {
-          navigate("/admin");
-        } else {
-          navigate("/dashboard");
-        }
+        // Redirect to role assumption page
+        navigate("/role-assumption");
       } else {
         const errorData = await response.json();
         setError(errorData.message || "Login failed");
@@ -58,7 +54,7 @@ const LoginPage = () => {
         title: "Welcome back!",
         description: "You have been successfully logged in.",
       });
-      navigate("/admin");
+      navigate("/role-assumption");
     } finally {
       setLoading(false);
     }

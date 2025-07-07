@@ -13,12 +13,16 @@ import ProtectedRoute from "./components/auth/ProtectedRoute";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/auth/LoginPage";
 import SignUpPage from "./pages/auth/SignUpPage";
+import RoleAssumptionPage from "./pages/auth/RoleAssumptionPage";
 import TwoFactorSetupPage from "./pages/auth/TwoFactorSetupPage";
 import AccessDeniedPage from "./pages/auth/AccessDeniedPage";
 
 // User Pages
 import UserDashboard from "./pages/user/UserDashboard";
 import ProfileSettings from "./pages/user/ProfileSettings";
+
+// New Resources Page
+import ResourcesPage from "./pages/ResourcesPage";
 
 // Admin Pages
 import AdminLayout from "./components/layout/AdminLayout";
@@ -52,8 +56,12 @@ const App = () => (
             {/* Auth Routes */}
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignUpPage />} />
+            <Route path="/role-assumption" element={<RoleAssumptionPage />} />
             <Route path="/2fa-setup" element={<TwoFactorSetupPage />} />
             <Route path="/access-denied" element={<AccessDeniedPage />} />
+            
+            {/* Main Resources Dashboard */}
+            <Route path="/resources" element={<ResourcesPage />} />
             
             {/* User Routes */}
             <Route path="/dashboard" element={<UserDashboard />} />
